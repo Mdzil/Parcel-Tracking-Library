@@ -1,12 +1,9 @@
-namespace ParcelTrack.Library
+public enum ParcelStatus
 {
-    public enum ParcelStatus
-    {
-        Registered,
-        PickedUp,
-        InTransit,
-        OutForDelivery,
-        Delivered,
-        Cancelled
-    }
+    Registered,
+    PickedUp,
+    InTransit,
+    OutForDelivery,
+    Delivered,
+    Cancelled
 }

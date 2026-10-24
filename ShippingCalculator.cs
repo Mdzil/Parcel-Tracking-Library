@@ -1,10 +1,7 @@
-namespace ParcelTrack.Library
+public class ShippingCalculator
 {
-    public class ShippingCalculator
+    public decimal CalculateFee(Parcel parcel, DeliveryService service)
     {
-        public decimal CalculateFee(Parcel parcel, DeliveryService service)
-        {
-            return 0m;
-        }
+        return 0m;
     }
 }
