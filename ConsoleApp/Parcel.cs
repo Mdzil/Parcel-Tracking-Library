@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+using Status;
+
 public class Parcel
 {
     public string TrackingNumber { get; set; }

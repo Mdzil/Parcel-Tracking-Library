@@ -1,3 +1,6 @@
+using System;
+using Status;
+
 public class TrackingManager
 {
     public void AddTrackingEvent(Parcel parcel, TrackingEvent trackingEvent)
@@ -5,8 +8,8 @@ public class TrackingManager
 
     }
 
-    public ParcelStatus GetCurrentStatus(Parcel parcel)
+    public Status.ParcelStatus GetCurrentStatus(Parcel parcel)
     {
-        return ParcelStatus.Registered;
+        return Status.ParcelStatus.Registered;
     }
 }

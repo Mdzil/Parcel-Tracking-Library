@@ -1,3 +1,5 @@
+using System;
+
 public class Contact
 {
     public string Name { get; }

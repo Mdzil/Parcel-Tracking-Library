@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Status;
 
 class Program
 {
@@ -27,7 +28,7 @@ class Program
         // 4. Update Tracking Status
         TrackingManager trackingManager = new TrackingManager();
         TrackingEvent pickupEvent = new TrackingEvent(
-            ParcelStatus.PickedUp, 
+            // Status.ParcelStatus.PickedUp, 
             "New York Hub", 
             DateTime.Now, 
             "Package received at facility"
@@ -38,7 +39,6 @@ class Program
 
         // 5. Query the System
         Parcel retrievedParcel = tracker.FindParcel("TRK987654321");
-        ParcelStatus currentStatus = trackingManager.GetCurrentStatus(parcel);
         List<TrackingEvent> history = tracker.GetTrackingHistory("TRK987654321");
     }
 }

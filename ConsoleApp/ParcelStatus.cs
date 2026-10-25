@@ -1,9 +1,14 @@
-public enum ParcelStatus
+using System;
+
+namespace Status
 {
-    Registered,
-    PickedUp,
-    InTransit,
-    OutForDelivery,
-    Delivered,
-    Cancelled
+    public enum ParcelStatus
+    {
+        Registered,
+        PickedUp,
+        InTransit,
+        OutForDelivery,
+        Delivered,
+        Cancelled
+    }
 }
